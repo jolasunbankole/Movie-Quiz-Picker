@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FA2F2F"
+        android:orientation="vertical"
+        tools:context=".FragmentFiveStarHorrorQQ">
+
+
+        <ImageView
+            android:id="@+id/horror13"
+            android:layout_width="178dp"
+            android:layout_height="276dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/movie1"
+            android:src="@drawable/zerostar29"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/horror14"
+            android:layout_width="181dp"
+            android:layout_height="281dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+
+            android:src="@drawable/zerostar30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/horror15"
+            android:layout_width="179dp"
+            android:layout_height="267dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:src="@drawable/zerostar31"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/horror16"
+            android:layout_width="180dp"
+            android:layout_height="283dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:src="@drawable/zerostar32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Movie18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Friday the 13th (5.5/10)"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/horror13"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/Movie20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Skin Walkers (5.3/10)"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horror14" />
+
+
+        <TextView
+            android:id="@+id/Movie17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Queen of the Damned (5.3/10)"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/horror15"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+        <TextView
+            android:id="@+id/Movie19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:text="The Watcher (5.3/10)"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horror16" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

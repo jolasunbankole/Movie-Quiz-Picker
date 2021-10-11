@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MoviePicker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_one_of_the_categories_bellow">choose one of the categories bellow</string>
+    <string name="movie_picker_app">Movie Picker App</string>
+    <string name="action">Action</string>
+    <string name="comedy">Comedy</string>
+    <string name="horror">Horror</string>
+    <string name="anime">Anime</string>
+    <string name="_1990">1990+</string>
+    <string name="_2001">2001+</string>
+    <string name="_2010">2010+</string>
+    <string name="choose_a_year">Choose a year</string>
+    <string name="action_movies">Action Movies</string>
+    <string name="comedy_movies">Comedy Movies</string>
+    <string name="horror_movies">Horror Movies</string>
+    <string name="anime_movies">Anime Movies</string>
+    <string name="_2001_action">2001 Action</string>
+    <string name="_1990s_action">1990s Action</string>
+    <string name="movie1">Movie1</string>
+    <string name="movie2">Movie2</string>
+    <string name="movie3">Movie3</string>
+    <string name="movie4">Movie4</string>
+    <string name="movie_inception">Movie: Inception(8.8/10)</string>
+    <string name="_2000s_horror_movies">2000s Horror Movies</string>
+    <string name="_2010s_horror_movies">2010s Horror Movies</string>
+
+</resources>

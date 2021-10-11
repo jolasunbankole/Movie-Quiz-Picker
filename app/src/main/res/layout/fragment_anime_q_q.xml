@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="animeGen2"
+            type="com.example.moviepicker.anime.AnimeQQFragment" />
+
+    </data>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FA2F2F"
+        android:orientation="vertical"
+        tools:context=".AnimeQQFragment">
+
+        <TextView
+            android:id="@+id/AnimeMM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Hello"
+            android:text="@string/anime_movies"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:translationY="20dp"/>
+
+        <TextView
+            android:id="@+id/Question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Hello"
+            android:text="@{animeGen2.aqqQuestions.AnimeQuestion2}"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:translationY="200dp"/>
+
+        <Button
+            android:id="@+id/AnimeFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Category"
+            android:textColor="@color/black"
+            android:text="@{animeGen2.answers[0]}"
+            android:textSize="15sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:translationY="250dp"/>
+
+        <Button
+            android:id="@+id/AnimeFive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="Category"
+            android:text="@{animeGen2.answers[1]}"
+            android:textSize="15sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:translationY="350dp"/>
+
+        <Button
+            android:id="@+id/AnimeSix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="Category"
+            android:text="@{animeGen2.answers[2]}"
+            android:textSize="15sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:translationY="450dp"/>
+
+
+    </LinearLayout>
+</layout>

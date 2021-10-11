@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FA2F2F"
+    tools:context=".FragmentMainScreen">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Hello"
+        android:text="@string/movie_picker_app"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:translationY="20dp"/>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Hello"
+        android:text="@string/choose_one_of_the_categories_bellow"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:translationY="150dp"/>
+
+    <Button
+        android:id="@+id/ActionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Category"
+        android:textColor="@color/black"
+        android:text="@string/action"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:translationY="200dp"/>
+
+    <Button
+        android:id="@+id/ComedyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text="Category"
+        android:text="@string/comedy"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:translationY="250dp"/>
+
+    <Button
+        android:id="@+id/HorrorBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text="Category"
+        android:text="@string/horror"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:translationY="300dp"/>
+
+    <Button
+        android:id="@+id/AnimeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text="Category"
+        android:text="@string/anime"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:translationY="350dp"/>
+
+
+
+
+</LinearLayout>
+</layout>
+

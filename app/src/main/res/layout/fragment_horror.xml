@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FA2F2F"
+    tools:context=".HorrorFragment">
+
+
+
+    <TextView
+        android:id="@+id/Horror1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        tools:text="Hello"
+        android:text="@string/horror_movies"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:translationY="20dp"/>
+
+    <TextView
+        android:id="@+id/Horror2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Hello"
+        android:text="@string/choose_a_year"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:translationY="200dp"/>
+
+
+
+    <Button
+        android:id="@+id/Year7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Category"
+        android:textColor="@color/black"
+        android:text="@string/_1990"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:translationY="250dp"/>
+
+    <Button
+        android:id="@+id/Year8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text="Category"
+        android:text="@string/_2001"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:translationY="350dp"/>
+
+    <Button
+        android:id="@+id/Year9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text="Category"
+        android:text="@string/_2010"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:translationY="450dp"/>
+
+
+
+</LinearLayout>
+</layout>

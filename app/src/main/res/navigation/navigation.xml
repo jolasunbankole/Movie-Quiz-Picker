@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentMainScreen2">
+
+    <fragment
+        android:id="@+id/fragmentMainScreen2"
+        android:name="com.example.moviepicker.FragmentMainScreen"
+        android:label="FragmentMainScreen"
+        tools:layout="@layout/fragment_main_screen">
+
+        <action
+            android:id="@+id/action_fragmentMainScreen2_to_actionMovieFragment"
+            app:destination="@id/actionMovieFragment" />
+        <action
+            android:id="@+id/action_fragmentMainScreen2_to_comedyFragment"
+            app:destination="@id/comedyFragment" />
+        <action
+            android:id="@+id/action_fragmentMainScreen2_to_horrorFragment"
+            app:destination="@id/horrorFragment" />
+        <action
+            android:id="@+id/action_fragmentMainScreen2_to_animeFragment"
+            app:destination="@id/animeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actionMovieFragment"
+        android:name="com.example.moviepicker.ActionMovieFragment"
+        android:label="ActionMovieFragment"
+        tools:layout="@layout/fragment_action_movie">
+        <action
+            android:id="@+id/action_actionMovieFragment_to_actionQFragment"
+            app:destination="@id/actionQFragment" />
+        <action
+            android:id="@+id/action_actionMovieFragment_to_actionQQFragment"
+            app:destination="@id/actionQQFragment" />
+        <action
+            android:id="@+id/action_actionMovieFragment_to_actionQQQFragment"
+            app:destination="@id/actionQQQFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comedyFragment"
+        android:name="com.example.moviepicker.comedy.ComedyFragment"
+        android:label="fragment_comedy"
+        tools:layout="@layout/fragment_comedy" >
+        <action
+            android:id="@+id/action_comedyFragment_to_comedyQFragment"
+            app:destination="@id/comedyQFragment" />
+        <action
+            android:id="@+id/action_comedyFragment_to_comedyQQFragment"
+            app:destination="@id/comedyQQFragment" />
+        <action
+            android:id="@+id/action_comedyFragment_to_comedyQQQFragment"
+            app:destination="@id/comedyQQQFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/horrorFragment"
+        android:name="com.example.moviepicker.horror.HorrorFragment"
+        android:label="fragment_horror"
+        tools:layout="@layout/fragment_horror" >
+        <action
+            android:id="@+id/action_horrorFragment_to_horrorQFragment"
+            app:destination="@id/horrorQFragment" />
+        <action
+            android:id="@+id/action_horrorFragment_to_horrorQQFragment"
+            app:destination="@id/horrorQQFragment" />
+        <action
+            android:id="@+id/action_horrorFragment_to_horrorQQQFragment"
+            app:destination="@id/horrorQQQFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animeFragment"
+        android:name="com.example.moviepicker.anime.AnimeFragment"
+        android:label="fragment_anime"
+        tools:layout="@layout/fragment_anime" >
+        <action
+            android:id="@+id/action_animeFragment_to_animeQFragment"
+            app:destination="@id/animeQFragment" />
+        <action
+            android:id="@+id/action_animeFragment_to_animeQQFragment"
+            app:destination="@id/animeQQFragment" />
+        <action
+            android:id="@+id/action_animeFragment_to_animeQQQFragment"
+            app:destination="@id/animeQQQFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actionQFragment"
+        android:name="com.example.moviepicker.ActionQFragment"
+        android:label="ActionQFragment"
+        tools:layout="@layout/fragment_action_q">
+        <action
+            android:id="@+id/action_actionQFragment_to_action90FragmentQ"
+            app:destination="@id/fragmentThreeStarActionQ" />
+        <action
+            android:id="@+id/action_actionQFragment_to_fragmentFiveStarActionQ"
+            app:destination="@id/fragmentFiveStarActionQ" />
+        <action
+            android:id="@+id/action_actionQFragment_to_fragmentZeroStarActionQ"
+            app:destination="@id/fragmentZeroStarActionQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/actionQQFragment"
+        android:name="com.example.moviepicker.ActionQQFragment"
+        android:label="ActionQQFragment"
+        tools:layout="@layout/fragment_action_q_q">
+        <action
+            android:id="@+id/action_actionQQFragment_to_fragmentFiveStarActionQQ"
+            app:destination="@id/fragmentFiveStarActionQQ" />
+        <action
+            android:id="@+id/action_actionQQFragment_to_fragmentThreeStarActionQQ"
+            app:destination="@id/fragmentThreeStarActionQQ" />
+        <action
+            android:id="@+id/action_actionQQFragment_to_fragmentZeroStarsActionQQ"
+            app:destination="@id/fragmentZeroStarsActionQQ" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/actionQQQFragment"
+        android:name="com.example.moviepicker.ActionQQQFragment"
+        android:label="ActionQQQFragment"
+        tools:layout="@layout/fragment_action_q_q_q">
+        <action
+            android:id="@+id/action_actionQQQFragment_to_fragmentFiverStarActionQQQ"
+            app:destination="@id/fragmentFiverStarActionQQQ" />
+        <action
+            android:id="@+id/action_actionQQQFragment_to_fragmentThreeStarActionQQQ"
+            app:destination="@id/fragmentThreeStarActionQQQ" />
+        <action
+            android:id="@+id/action_actionQQQFragment_to_fragmentZeroStarActionQQQ"
+            app:destination="@id/fragmentZeroStarActionQQQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFiverStarActionQQQ"
+        android:name="com.example.moviepicker.FragmentFiverStarActionQQQ"
+        android:label="FragmentFiverStarActionQQQ"
+        tools:layout="@layout/fragment_fiver_star_action_q_q_q"/>
+    <fragment
+        android:id="@+id/fragmentThreeStarActionQQQ"
+        android:name="com.example.moviepicker.FragmentThreeStarActionQQQ"
+        android:label="FragmentThreeStarActionQQQ"
+        tools:layout="@layout/fragment_three_star_action_q_q_q"/>
+    <fragment
+        android:id="@+id/fragmentZeroStarActionQQQ"
+        android:name="com.example.moviepicker.FragmentZeroStarActionQQQ"
+        android:label="FragmentZeroStarActionQQQ"
+        tools:layout="@layout/fragment_zero_star_action_q_q_q"/>
+    <fragment
+        android:id="@+id/fragmentThreeStarActionQ"
+        android:name="com.example.moviepicker.FragmentThreeStarActionQ"
+        android:label="FragmentThreeStarActionQ"
+        tools:layout="@layout/fragment_three_star_action_q"/>
+    <fragment
+        android:id="@+id/fragmentFiveStarActionQ"
+        android:name="com.example.moviepicker.FragmentFiveStarActionQ"
+        android:label="FragmentFiveStarActionQ"
+        tools:layout="@layout/fragment_five_star_action_q"/>
+    <fragment
+        android:id="@+id/fragmentZeroStarActionQ"
+        android:name="com.example.moviepicker.FragmentZeroStarActionQ"
+        android:label="FragmentZeroStarActionQ"
+        tools:layout="@layout/fragment_zero_star_action_q"/>
+    <fragment
+        android:id="@+id/fragmentFiveStarActionQQ"
+        android:name="com.example.moviepicker.FragmentFiveStarActionQQ"
+        android:label="fragment_five_star_action_q_q"
+        tools:layout="@layout/fragment_five_star_action_q_q" />
+    <fragment
+        android:id="@+id/fragmentThreeStarActionQQ"
+        android:name="com.example.moviepicker.FragmentThreeStarActionQQ"
+        android:label="FragmentThreeStarActionQQ"
+        tools:layout="@layout/fragment_three_star_action_q_q" />
+    <fragment
+        android:id="@+id/fragmentZeroStarsActionQQ"
+        android:name="com.example.moviepicker.FragmentZeroStarsActionQQ"
+        android:label="fragment_zero_stars_action_q_q"
+        tools:layout="@layout/fragment_zero_stars_action_q_q" />
+    <fragment
+        android:id="@+id/comedyQFragment"
+        android:name="com.example.moviepicker.comedy.ComedyQFragment"
+        android:label="fragment_comedy_q"
+        tools:layout="@layout/fragment_comedy_q" >
+        <action
+            android:id="@+id/action_comedyQFragment_to_fragmentFiveStarComedyQ"
+            app:destination="@id/fragmentFiveStarComedyQ" />
+        <action
+            android:id="@+id/action_comedyQFragment_to_fragmentThreeStarComedyQ"
+            app:destination="@id/fragmentThreeStarComedyQ" />
+        <action
+            android:id="@+id/action_comedyQFragment_to_fragmentZeroStarComedyQ"
+            app:destination="@id/fragmentZeroStarComedyQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/comedyQQFragment"
+        android:name="com.example.moviepicker.comedy.ComedyQQFragment"
+        android:label="fragment_comedy_q_q"
+        tools:layout="@layout/fragment_comedy_q_q" >
+        <action
+            android:id="@+id/action_comedyQQFragment_to_fragmentFiveStarComedyQQ2"
+            app:destination="@id/fragmentFiveStarComedyQQ" />
+        <action
+            android:id="@+id/action_comedyQQFragment_to_fragmentThreeStarComedyQQ"
+            app:destination="@id/fragmentThreeStarComedyQQ" />
+        <action
+            android:id="@+id/action_comedyQQFragment_to_fragmentZeroStarComedyQQ"
+            app:destination="@id/fragmentZeroStarComedyQQ" />
+        <action
+            android:id="@+id/action_comedyQQFragment_to_fragmentFiveStarComedyQQ"
+            app:destination="@id/fragmentFiveStarComedyQQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/comedyQQQFragment"
+        android:name="com.example.moviepicker.comedy.ComedyQQQFragment"
+        android:label="fragment_comedy_q_q_q"
+        tools:layout="@layout/fragment_comedy_q_q_q" >
+        <action
+            android:id="@+id/action_comedyQQQFragment_to_fragmentFiveStarQQQ"
+            app:destination="@id/fragmentFiveStarComedyQQQ" />
+        <action
+            android:id="@+id/action_comedyQQQFragment_to_fragmentThreeStarComedyQQQ"
+            app:destination="@id/fragmentThreeStarComedyQQQ" />
+        <action
+            android:id="@+id/action_comedyQQQFragment_to_fragmentZeroStarComedyQQQ"
+            app:destination="@id/fragmentZeroStarComedyQQQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFiveStarComedyQ"
+        android:name="com.example.moviepicker.comedy.FragmentFiveStarComedyQ"
+        android:label="FragmentFiveStarComedyQ"
+        tools:layout="@layout/fragment_five_star_comedy_q"/>
+    <fragment
+        android:id="@+id/fragmentThreeStarComedyQ"
+        android:name="com.example.moviepicker.comedy.FragmentThreeStarComedyQ"
+        android:label="FragmentThreeStarComedyQ"
+        tools:layout="@layout/fragment_three_star_comedy_q"/>
+    <fragment
+        android:id="@+id/fragmentZeroStarComedyQ"
+        android:name="com.example.moviepicker.comedy.FragmentZeroStarComedyQ"
+        android:label="FragmentZeroStarComedyQ"
+        tools:layout="@layout/fragment_zero_star_comedy_q"/>
+    <fragment
+        android:id="@+id/fragmentFiveStarComedyQQ"
+        android:name="com.example.moviepicker.comedy.FragmentFiveStarComedyQQ"
+        android:label="FragmentFiveStarComedyQQ"
+        tools:layout="@layout/fragment_five_star_comedy_q_q"/>
+    <fragment
+        android:id="@+id/fragmentThreeStarComedyQQ"
+        android:name="com.example.moviepicker.comedy.FragmentThreeStarComedyQQ"
+        android:label="FragmentThreeStarComedyQQ"
+        tools:layout="@layout/fragment_three_star_comedy_q_q"/>
+    <fragment
+        android:id="@+id/fragmentZeroStarComedyQQ"
+        android:name="com.example.moviepicker.comedy.FragmentZeroStarComedyQQ"
+        android:label="fragment_zero_star_comedy_q_q"
+        tools:layout="@layout/fragment_zero_star_comedy_q_q" />
+    <fragment
+        android:id="@+id/fragmentFiveStarComedyQQQ"
+        android:name="com.example.moviepicker.comedy.FragmentFiveStarComedyQQQ"
+        android:label="fragment_five_star_q_q_q"
+        tools:layout="@layout/fragment_five_star_comedy_q_q_q" />
+    <fragment
+        android:id="@+id/fragmentThreeStarComedyQQQ"
+        android:name="com.example.moviepicker.comedy.FragmentThreeStarComedyQQQ"
+        android:label="fragment_three_star_comedy_q_q_q"
+        tools:layout="@layout/fragment_three_star_comedy_q_q_q" />
+    <fragment
+        android:id="@+id/fragmentZeroStarComedyQQQ"
+        android:name="com.example.moviepicker.comedy.FragmentZeroStarComedyQQQ"
+        android:label="fragment_zero_star_comedy_q_q_q"
+        tools:layout="@layout/fragment_zero_star_comedy_q_q_q" />
+    <fragment
+        android:id="@+id/horrorQFragment"
+        android:name="com.example.moviepicker.horror.HorrorQFragment"
+        android:label="fragment_horror_q"
+        tools:layout="@layout/fragment_horror_q" >
+        <action
+            android:id="@+id/action_horrorQFragment_to_fragmentFiveStarHorrorQ"
+            app:destination="@id/fragmentFiveStarHorrorQ" />
+        <action
+            android:id="@+id/action_horrorQFragment_to_fragmentThreeStarHorrorQ"
+            app:destination="@id/fragmentThreeStarHorrorQ" />
+        <action
+            android:id="@+id/action_horrorQFragment_to_fragmentZeroStarHorrorQ"
+            app:destination="@id/fragmentZeroStarHorrorQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/horrorQQFragment"
+        android:name="com.example.moviepicker.horror.HorrorQQFragment"
+        android:label="fragment_horror_q_q"
+        tools:layout="@layout/fragment_horror_q_q" >
+        <action
+            android:id="@+id/action_horrorQQFragment_to_fragmentFiveStarHorrorQQ"
+            app:destination="@id/fragmentFiveStarHorrorQQ" />
+        <action
+            android:id="@+id/action_horrorQQFragment_to_fragmentThreeStarHorrorQQ"
+            app:destination="@id/fragmentThreeStarHorrorQQ" />
+        <action
+            android:id="@+id/action_horrorQQFragment_to_fragmentZeroStarHorrorQQ"
+            app:destination="@id/fragmentZeroStarHorrorQQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/horrorQQQFragment"
+        android:name="com.example.moviepicker.horror.HorrorQQQFragment"
+        android:label="fragment_horror_q_q_q"
+        tools:layout="@layout/fragment_horror_q_q_q" >
+        <action
+            android:id="@+id/action_horrorQQQFragment_to_fragmentFiveStarHorrorQQQ"
+            app:destination="@id/fragmentFiveStarHorrorQQQ" />
+        <action
+            android:id="@+id/action_horrorQQQFragment_to_fragmentThreeStarHorrorQQQ"
+            app:destination="@id/fragmentThreeStarHorrorQQQ" />
+        <action
+            android:id="@+id/action_horrorQQQFragment_to_fragmentTZeroStarHorrorQQQ"
+            app:destination="@id/fragmentTZeroStarHorrorQQQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFiveStarHorrorQ"
+        android:name="com.example.moviepicker.horror.FragmentFiveStarHorrorQ"
+        android:label="fragment_five_star_horror_q"
+        tools:layout="@layout/fragment_five_star_horror_q" />
+    <fragment
+        android:id="@+id/fragmentThreeStarHorrorQ"
+        android:name="com.example.moviepicker.horror.FragmentThreeStarHorrorQ"
+        android:label="fragment_three_star_horror_q"
+        tools:layout="@layout/fragment_three_star_horror_q" />
+    <fragment
+        android:id="@+id/fragmentZeroStarHorrorQ"
+        android:name="com.example.moviepicker.horror.FragmentZeroStarHorrorQ"
+        android:label="fragment_zero_star_horror_q"
+        tools:layout="@layout/fragment_zero_star_horror_q" />
+    <fragment
+        android:id="@+id/fragmentFiveStarHorrorQQ"
+        android:name="com.example.moviepicker.horror.FragmentFiveStarHorrorQQ"
+        android:label="FragmentFiveStarHorrorQQ" />
+    <fragment
+        android:id="@+id/fragmentThreeStarHorrorQQ"
+        android:name="com.example.moviepicker.horror.FragmentThreeStarHorrorQQ"
+        android:label="FragmentThreeStarHorrorQQ" />
+    <fragment
+        android:id="@+id/fragmentZeroStarHorrorQQ"
+        android:name="com.example.moviepicker.horror.FragmentZeroStarHorrorQQ"
+        android:label="FragmentZeroStarHorrorQQ" />
+    <fragment
+        android:id="@+id/fragmentFiveStarHorrorQQQ"
+        android:name="com.example.moviepicker.horror.FragmentFiveStarHorrorQQQ"
+        android:label="FragmentFiveStarHorrorQQQ" />
+    <fragment
+        android:id="@+id/fragmentThreeStarHorrorQQQ"
+        android:name="com.example.moviepicker.horror.FragmentThreeStarHorrorQQQ"
+        android:label="FragmentThreeStarHorrorQQQ" />
+    <fragment
+        android:id="@+id/fragmentTZeroStarHorrorQQQ"
+        android:name="com.example.moviepicker.horror.FragmentZeroStarHorrorQQQ"
+        android:label="FragmentTZeroStarHorrorQQQ" />
+    <fragment
+        android:id="@+id/animeQFragment"
+        android:name="com.example.moviepicker.anime.AnimeQFragment"
+        android:label="fragment_anime_q"
+        tools:layout="@layout/fragment_anime_q" >
+        <action
+            android:id="@+id/action_animeQFragment_to_fragmentFiveStarAnimeQ"
+            app:destination="@id/fragmentFiveStarAnimeQ" />
+        <action
+            android:id="@+id/action_animeQFragment_to_fragmentThreeStarAnimeQ"
+            app:destination="@id/fragmentThreeStarAnimeQ" />
+        <action
+            android:id="@+id/action_animeQFragment_to_fragmentZeroStarAnimeQ"
+            app:destination="@id/fragmentZeroStarAnimeQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/animeQQFragment"
+        android:name="com.example.moviepicker.anime.AnimeQQFragment"
+        android:label="AnimeQQFragment"
+        tools:layout="@layout/fragment_anime_q_q">
+        <action
+            android:id="@+id/action_animeQQFragment_to_fragmentFiveStarAnimeQQ"
+            app:destination="@id/fragmentFiveStarAnimeQQ" />
+        <action
+            android:id="@+id/action_animeQQFragment_to_fragmentThreeStarAnimeQQ"
+            app:destination="@id/fragmentThreeStarAnimeQQ" />
+        <action
+            android:id="@+id/action_animeQQFragment_to_fragmentZeroStarAnimeQQ"
+            app:destination="@id/fragmentZeroStarAnimeQQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/animeQQQFragment"
+        android:name="com.example.moviepicker.anime.AnimeQQQFragment"
+        android:label="AnimeQQQFragment"
+        tools:layout="@layout/fragment_anime_q_q_q">
+        <action
+            android:id="@+id/action_animeQQQFragment_to_fragmentFiveStarAnimeQQQ"
+            app:destination="@id/fragmentFiveStarAnimeQQQ" />
+        <action
+            android:id="@+id/action_animeQQQFragment_to_fragmentThreeStarAnimeQQQ"
+            app:destination="@id/fragmentThreeStarAnimeQQQ" />
+        <action
+            android:id="@+id/action_animeQQQFragment_to_fragmentZeroStarAnimeQQQ"
+            app:destination="@id/fragmentZeroStarAnimeQQQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFiveStarAnimeQ"
+        android:name="com.example.moviepicker.anime.FragmentFiveStarAnimeQ"
+        android:label="FragmentFiveStarAnimeQ"
+        tools:layout="@layout/fragment_five_star_anime_q"/>
+    <fragment
+        android:id="@+id/fragmentThreeStarAnimeQ"
+        android:name="com.example.moviepicker.anime.FragmentThreeStarAnimeQ"
+        android:label="FragmentThreeStarAnimeQ"
+        tools:layout="@layout/fragment_three_star_anime_q"/>
+    <fragment
+        android:id="@+id/fragmentZeroStarAnimeQ"
+        android:name="com.example.moviepicker.anime.FragmentZeroStarAnimeQ"
+        android:label="FragmentZeroStarAnimeQ"
+        tools:layout="@layout/fragment_zero_star_anime_q"/>
+    <fragment
+        android:id="@+id/fragmentFiveStarAnimeQQ"
+        android:name="com.example.moviepicker.anime.FragmentFiveStarAnimeQQ"
+        android:label="FragmentFiveStarAnimeQQ"
+        tools:layout="@layout/fragment_five_star_anime_q_q"/>
+
+    <fragment
+        android:id="@+id/fragmentThreeStarAnimeQQ"
+        android:name="com.example.moviepicker.anime.FragmentThreeStarAnimeQQ"
+        android:label="FragmentThreeStarAnimeQQ"
+        tools:layout="@layout/fragment_three_star_anime_q_q"/>
+
+    <fragment
+        android:id="@+id/fragmentZeroStarAnimeQQ"
+        android:name="com.example.moviepicker.anime.FragmentZeroStarAnimeQQ"
+        android:label="FragmentZeroStarAnimeQQ"
+        tools:layout="@layout/fragment_zero_star_anime_q_q"/>
+    <fragment
+        android:id="@+id/fragmentFiveStarAnimeQQQ"
+        android:name="com.example.moviepicker.anime.FragmentFiveStarAnimeQQQ"
+        android:label="FragmentFiveStarAnimeQQQ"
+        tools:layout="@layout/fragment_five_star_anime_q_q_q"/>
+
+    <fragment
+        android:id="@+id/fragmentThreeStarAnimeQQQ"
+        android:name="com.example.moviepicker.anime.FragmentThreeStarAnimeQQQ"
+        android:label="FragmentThreeStarAnimeQQQ"
+        tools:layout="@layout/fragment_three_star_anime_q_q_q"/>
+
+    <fragment
+        android:id="@+id/fragmentZeroStarAnimeQQQ"
+        android:name="com.example.moviepicker.anime.FragmentZeroStarAnimeQQQ"
+        android:label="FragmentZeroStarAnimeQQQ"
+        tools:layout="@layout/fragment_zero_star_anime_q_q_q"/>
+
+
+
+</navigation>
